@@ -139,7 +139,7 @@ void mouseClicked() {
       sizeR = int (random(20, 50));           //sets a random size of ellipse
       ellipse(x, y, sizeR, sizeR);
 
-    } else {
+    } if (clicked == true && gameRunning == true && !inCircle) {
       println("miss");    
       wrong.play();               //a sound will be played
       println("wrong.play");
